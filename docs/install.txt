@@ -1,0 +1,16 @@
+pip install flask-script
+
+##
+git config --global url."https://".insteadOf git://
+
+npm install -g babel-cli
+## obsolete
+npm install -g react-tools
+
+babel --presets es2015,react --watch js/ --out-dir lib/
+
+python package/main.py
+
+http://localhost:5000
+
+
