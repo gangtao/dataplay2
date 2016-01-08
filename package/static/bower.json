@@ -17,7 +17,6 @@
     "bootstrap": "~3.3.6",
     "d3": "~3.5.12",
     "requirejs": "~2.1.22",
-    "requirejs-babel": "~0.0.9",
     "bootstrap-fileinput": "~4.2.8",
     "select2": "~4.0.1",
     "datatables": "~1.10.10",
