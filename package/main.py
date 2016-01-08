@@ -23,6 +23,11 @@ def index():
     return app.send_static_file('index.html')
 
 
+@app.route('/debug')
+def index_debug():
+    return app.send_static_file('index_debug.html')
+
+
 @app.route('/csvdata', methods=['GET', 'POST'])
 def csvdata():
     if request.method == 'POST':

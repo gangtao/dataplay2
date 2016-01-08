@@ -13,6 +13,9 @@ npm install babel-preset-react --save
 
 babel --presets es2015,react --watch js/ --out-dir lib/
 
+npm install requirejs --save
+node node_modules/requirejs/bin/r.js -o build.js
+
 python package/main.py
 
 http://localhost:5000

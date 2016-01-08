@@ -4,13 +4,14 @@
   "description": "",
   "main": "",
   "dependencies": {
-    "babel-core": "^6.3.21",
-    "babelify": "^7.2.0",
     "babel": "^6.3.13",
-    "react": "^0.14.3",
-    "babel-preset-react": "^6.3.13",
+    "babel-core": "^6.3.21",
     "babel-preset-es2015": "^6.3.13",
-    "react-dom": "^0.14.3"
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "requirejs": "^2.1.22"
   },
   "devDependencies": {},
   "scripts": {
