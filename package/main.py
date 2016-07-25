@@ -1,5 +1,4 @@
 from flask import Flask, request, make_response, redirect, url_for, jsonify
-from flask.ext.script import Manager
 
 import csv
 import os
