@@ -40,7 +40,7 @@ def csvdata():
         return json.dumps({error:
                            'You are not allowed to upload such a file.'})
     else:
-        flist = [f.replace('./data/', '').replace('.csv', '')
+        flist = [f.replace('./data'+os.sep, '').replace('.csv', '')
                  for f in glob.glob('./data/*.csv')]
         return json.dumps(flist)
 
@@ -65,7 +65,7 @@ def getdata(dataname):
             if headerOnly:
                 return jsonify(name=dataname, csv=csvfile.readline())
             else:
-                return jsonify(name=dataname, csv=csvfile.read())
+                return jsonify(name=dataname, csv=csvfile.read().decode("UTF-8"))
 
 
 @app.route('/ml/cls/<action>', methods=['GET'])
