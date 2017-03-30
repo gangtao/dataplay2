@@ -33,7 +33,7 @@ RUN cd /home/dataplay2/package/static \
 	&& npm install babel-preset-es2015 --save \
 	&& npm install babel-preset-react --save 
 
-COPY /start.sh /
+COPY ./start.sh /
 RUN chmod 777 /start.sh
 WORKDIR /
 
